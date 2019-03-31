@@ -3,9 +3,22 @@
 <html lang="zh-hans">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="keywords" content="{% block 关键词 %}小米,小米9，小米MIX,手机{% endblock 关键词 %}">
+    <meta name="descriptions" content="{% block 网页描述 %}小米手机商城页面{% endblock 网页描述 %}">
+    <title>{% block 网页标题 %}小米商城{% endblock 网页标题 %}</title>
 </head>
 <body>
+
+    {% include 'shopping/header.html' %}
+    {% include 'shopping/nav.html' %}
+
+    <main>
+        {% block 主体 %}
+        这是主体
+        {% endblock 主体 %}
+    </main>
+    {% include 'shopping/footer.html' %}
+
 
 </body>
 </html>
