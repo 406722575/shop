@@ -5,5 +5,5 @@ shop
 4、实现app功能，添加urls文件
 5、用models创建数据库表格
 6、admin后台中注册表，创建用户createsuperuser
-
+7、创建template和static,创建母模板
 
